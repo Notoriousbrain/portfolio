@@ -1,0 +1,25 @@
+import banner from './banner-bg.png'
+import colorSharp1 from './color-sharp.png'
+import colorSharp2 from './color-sharp2.png'
+import footer from './footer-bg.png'
+import headerImg from './header-img.svg'
+import contact from './contact-img.svg'
+import express from './expressjs.png'
+import github from './github.png'
+import js from './js.png'
+import mongodb from './mongodb.png'
+import nextjs from './nextjs.png'
+import nodejs from './nodejs.png'
+import reactjs from './reactjs.png'
+import redux from './redux.png'
+import solidity from './solidity.png'
+import tailwindcss from './tailwindcss.png'
+import upload from './upload.png'
+import shop from './shop2.png'
+import dashboard from './dashboard.png'
+import crowdFunding from './crowdFunding.png'
+import nftMarketplace from './nftMarketplace.png'
+
+export default { banner, colorSharp1, colorSharp2, footer, headerImg, express, github, js, mongodb, nextjs, nodejs, reactjs, redux, solidity, tailwindcss, upload, contact  };
+
+export { shop, dashboard, crowdFunding, nftMarketplace };
