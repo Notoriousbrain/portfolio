@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <MyDetails />
       <Technologies />
-      <div className="dark:bg-my-dark bg-my-light flex flex-col pt-10">
+      <div className="dark:bg-my-dark bg-my-light flex flex-col pt-10" id="projects">
         <h1 className="text-[30px] mdl:text-[25px] sm:text-[20px] xs:text-[15px] dark:text-my-light text-my-dark text-center ">
           My Projects
         </h1>

@@ -46,7 +46,7 @@ const ContactMe = () => {
    };
   return (
     <>
-      <h1 className="text-[30px] mdl:text-[25px] sm:text-[20px] xs:text-[15px] dark:text-my-light text-my-dark text-center dark:bg-my-dark bg-my-light ">
+      <h1 id="message" className="text-[30px] mdl:text-[25px] sm:text-[20px] xs:text-[15px] dark:text-my-light text-my-dark text-center dark:bg-my-dark bg-my-light ">
         Write me a Message!
       </h1>
       <div className="flex dark:bg-my-dark bg-my-light pt-10 sm:block pb-16">

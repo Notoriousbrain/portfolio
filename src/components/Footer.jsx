@@ -9,7 +9,7 @@ const Footer = ({isDark}) => {
     <footer className="dark:bg-my-dark bg-my-light flexCenter flex-col border-t dark:border-my-black-1 border-my-gray-1 sm:py-8 py-10">
       <div className="w-full minmd:w-4/5 flex-row flex justify-between sm:flex-col md:px-4 px-24 ">
         <div className="w-1/5 sm:w-full">
-          <Link to="/">
+          <Link to="https://drive.google.com/file/d/1Gq05SJGKebJSOgnSWrOmCyl6q0cJEmeX/view">
             <button
               type="button"
               className="border dark:border-my-black-1 text-lg minlg:text-lg py-4  mb-3 px-3 minlg:px-8 font-poppins font-semibold text-my-dark dark:text-my-light mx-2 md:mx-0 rounded-md w-full md:w-full md:text-[20px] hover:bg-[#00CCBB] "
@@ -40,27 +40,27 @@ const Footer = ({isDark}) => {
             </h1>
           </div>
           <div className="flex space-x-5">
-            <a href="https://github.com/Notoriousbrain">
+            <Link to="https://github.com/Notoriousbrain">
               <AiFillGithub
                 size={28}
                 color={isDark ? "#FFF5EE" : "#24252D"}
                 className="mr-4"
               />
-            </a>
-            <a href="https://github.com/Notoriousbrain">
+            </Link>
+            <Link to="https://www.linkedin.com/in/rohit-singh-7a8866248/">
               <AiFillLinkedin
                 size={28}
                 color={isDark ? "#FFF5EE" : "#24252D"}
                 className="mr-4"
               />
-            </a>
-            <a href="https://github.com/Notoriousbrain">
+            </Link>
+            <Link to="https://www.instagram.com/its.rohit._singh/">
               <AiOutlineInstagram
                 size={28}
                 color={isDark ? "#FFF5EE" : "#24252D"}
                 className="mr-4"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

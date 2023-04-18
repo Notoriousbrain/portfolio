@@ -17,9 +17,9 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
       case 0:
         return "/";
       case 1:
-        return "/technologies";
+        return "#technologies";
       case 2:
-        return "/projects";
+        return "#projects";
       default:
         return "/";
     }
@@ -41,14 +41,14 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
           className="flex  flex-row items-center pl-8 w-full md:text-[24px] font-poppins tracking-widest font-medium text-base dark:hover:text-my-light hover:text-my-dark ml-2 md:p-2 md:pb-5 dark:text-my-light text-my-black-1
           "
         >
-          <Link to={generateLink(i)}>{item}</Link>
+          <a href={generateLink(i)}>{item}</a>
         </li>
       ))}
     </ul>
   );
 };
 
-const ButtonGroup = ({ setActive, navigate, setIsOpen }) => {
+const ButtonGroup = ({ setActive, setIsOpen }) => {
   return (
     <Button
       btnName="Let's Connect"
@@ -56,7 +56,6 @@ const ButtonGroup = ({ setActive, navigate, setIsOpen }) => {
       handleClick={() => {
         setActive("");
         setIsOpen(false);
-        navigate('/');
       }}
     />
   );
@@ -72,29 +71,30 @@ const Navbar = ({themeSwitch, isDark, setIsDark}) => {
   return (
     <nav className="flexBetween w-full z-10 p-4 flex-row border-b dark:bg-my-dark bg-my-light dark:border-my-black-1 border-my-gray-1">
       <div className="flex flex-1 space-x-8 sm:space-x-3 flex-row justify-start pl-16 xs:pl-5">
-        <a href="https://github.com/Notoriousbrain">
+        <Link to="https://github.com/Notoriousbrain">
           <AiFillGithub size={28} color={isDark ? "#FFF5EE" : "#24252D"} />
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="https://www.linkedin.com/in/rohit-singh-7a8866248/">
           <AiFillLinkedin size={28} color={isDark ? "#FFF5EE" : "#24252D"} />
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="https://www.instagram.com/its.rohit._singh/">
           <AiOutlineInstagram
             size={28}
             color={isDark ? "#FFF5EE" : "#24252D"}
           />
-        </a>
+        </Link>
       </div>
 
       <div className="flex mr-11 flex-row justify-start">
         <div className="md:hidden flex">
           <MenuItems active={active} setActive={setActive} />
           <div className="ml-11">
-            <ButtonGroup
-              setActive={setActive}
-              navigate={navigate}
-              setIsOpen={setIsOpen}
-            />
+            <a href="#message">
+              <ButtonGroup
+                setActive={setActive}
+                setIsOpen={setIsOpen}
+              />
+            </a>
           </div>
         </div>
 

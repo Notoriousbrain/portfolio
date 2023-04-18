@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { shop, nftMarketplace, dashboard, crowdFunding } from "../assets";
+import { shop, nftMarketplace, dashboard, crowdFunding, deliveroo } from "../assets";
 
 
 const ProjectCard = ({ id, title, description, link }) => {
@@ -26,6 +26,10 @@ const ProjectCard = ({ id, title, description, link }) => {
   
     case 4:
       imgUrl = dashboard;
+      break;
+
+    case 5:
+      imgUrl = deliveroo;
       break;
   
     default:

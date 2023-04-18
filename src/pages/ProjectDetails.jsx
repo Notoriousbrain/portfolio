@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation, Link } from 'react-router-dom';
 
-import { shop, nftMarketplace, dashboard, crowdFunding } from "../assets";
+import { shop, nftMarketplace, dashboard, crowdFunding, deliveroo } from "../assets";
 import { BsImages } from 'react-icons/bs';
 
 const ProjectDetails = () => {
@@ -25,6 +25,10 @@ const ProjectDetails = () => {
           imgUrl = dashboard;
           break;
 
+        case 5:
+          imgUrl = deliveroo;
+          break;
+
         default:
           break;
       }
@@ -33,12 +37,12 @@ const ProjectDetails = () => {
       <div className="w-1/2 px-6 sm:w-full sm:flex sm:items-center">
         <img src={imgUrl} alt={title} />
       </div>
-      <div className="flex flex-col px-6 w-1/2 sm:w-full">
+      <div className="flex flex-col px-6 w-1/2 sm:w-full sm:mt-4">
         <div className="px-3 mb-3 sm:px-0 ">
           <h1 className="font-poppins dark:text-my-light text-my-black-1 font-semibold text-xl pb-1  text-center">
             {title}
           </h1>
-          <p className="font-poppins sm:mt-3 dark:text-my-light text-my-black-1 font-semibold minlg:text-xl mt-4">
+          <p className="font-poppins sm:mt-3 dark:text-my-light text-my-black-1 font-semibold minlg:text-xl mt-4 ">
             {description}
           </p>
         </div>
